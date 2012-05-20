@@ -1,0 +1,16 @@
+\---
+layout : default
+\---
+
+.something
+	hello guardss
+
+.page-header
+	%h1
+		{{ page.title }} {{# page.tagline }}
+		%small {{ . }}
+		{{/ page.tagline }}
+
+.row
+	.span12
+		{{ content }}
